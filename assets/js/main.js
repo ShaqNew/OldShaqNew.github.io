@@ -255,6 +255,7 @@
 
 	}
 
+	// Modal
 	// Get the modal
 	var modal = document.getElementById("myModal");
 
@@ -278,6 +279,21 @@
 	window.onclick = function (event) {
 		if (event.target == modal) {
 			modal.style.display = "none";
+		}
+	}
+
+	// Return-to-Top button
+	//Get the button:
+	mybutton = document.getElementById("returnBtn");
+
+	// When the user scrolls down 20px from the top of the document, show the button
+	window.onscroll = function () { scrollFunction() };
+
+	function scrollFunction() {
+		if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			mybutton.style.display = "block";
+		} else {
+			mybutton.style.display = "none";
 		}
 	}
 

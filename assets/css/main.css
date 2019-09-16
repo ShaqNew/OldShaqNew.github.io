@@ -4712,6 +4712,7 @@ input, select, textarea {
     height: 20px;
 	}
 	
+	/* Modal */
 	/* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */
@@ -4748,3 +4749,20 @@ input, select, textarea {
   cursor: pointer;
 }
   
+/* Return butotn */
+#returnBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 6%; /* Place the button 30px from the right */
+	z-index: 99; /* Make sure it does not overlap */
+	background-color: #ccc;
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  font-size: 18px; /* Increase font size */
+}
+
+#returnBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
