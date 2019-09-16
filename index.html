@@ -17,6 +17,7 @@
 
 		<!-- Intro -->
 		<div id="intro">
+
 			<h1>SHAQ'S<br />
 				PORTFOLIO</h1>
 			<p>Hello and welcome to my portfolio page<br />
@@ -33,6 +34,11 @@
 
 		<!-- Nav -->
 		<nav id="nav">
+			<ul class="links">
+				<li><a href="#main">About me</a></li>
+				<li><a href="#skills">Skills</a></li>
+				<li><a href="#posts">My work</a></li>
+			</ul>
 			<ul class="icons">
 				<li><a href="#footer" class="fas fa-phone-square-alt fa-lg"><span class="label"></span></a></li>
 				<li><a href="https://www.linkedin.com/in/shaquille-newell-68880b142/"
@@ -60,7 +66,7 @@
 				</ul>
 			</article>
 			<article id="skills">
-				<h2 align="center" class="major">Skills And attributes</h2>
+				<h2 class="major">Skills And attributes</h2>
 				<div class="table-wrapper">
 					<table style="width: 43%; float:left;">
 						<thead>
@@ -142,8 +148,7 @@
 							<input type="radio" id="carousel-4" name="carousel[]">
 							<input type="radio" id="carousel-5" name="carousel[]">
 							<ul class="carousel__items">
-								<li class="carousel__item"><img
-										src="//lh5.googleusercontent.com/-cTEgPOnd3l8/U8-EmaZ4KNI/AAAAAAAABc8/6eacbALkQ6A/w1358-h905-no/carousel-1.JPG"
+								<li class="carousel__item"><img src="https://blackgirl.tech/images/black_logo.png"
 										alt=""></li>
 								<li class="carousel__item"><img
 										src="https://pbs.twimg.com/profile_images/1092794776209027072/c4QLRrce_400x400.jpg"
@@ -184,7 +189,7 @@
 					<p>References available on request</br>
 						Contact information given below</p>
 					<ul class="actions special">
-						<li><a href="#" class="button">More info</a></li>
+						<li><button id="WorkXpButton">More info</button></li>
 					</ul>
 				</article>
 				<article>
@@ -194,12 +199,44 @@
 					<a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
 					<p></p>
 					<ul class="actions special">
-						<li><a href="https://github.com/ShaqNew?tab=repositories" class="button">GitHub Projects</a></li>
+						<li><a href="https://github.com/ShaqNew?tab=repositories" class="button">GitHub Projects</a>
+						</li>
 					</ul>
 				</article>
 			</section>
+			<!-- Work experience modal -->
+			<div id="myModal" class="modal">
 
-
+				<!-- Modal content -->
+				<div class="modal-content">
+					<span class="close">&times;</span>
+					<h2><img src="https://blackgirl.tech/images/black_logo.png" alt="" height="42" width="42">
+						BGT
+					</h2>
+					<h3>JavaScript Tutor</h3>
+					<p> During my first year at university I volunteered as a tutor for people with little to no
+						experience in coding,
+						worked in a group of other volunteers during monthly events where we helped
+						clients to work through coding challenges and excersices to improve their skills</br>
+						<a href="https://twitter.com/blackgirltech?lang=en">Twitter</a></br>
+						<a href="https://blackgirl.tech/">Home page</a>
+					</p>
+					<h2><img src="https://pbs.twimg.com/profile_images/1092794776209027072/c4QLRrce_400x400.jpg" alt=""
+							height="42" width="42">
+						Wanstor IT
+					</h2>
+					<h3>1st line engineer</h3>
+					<p>During my placement year I worked in IT support where I would receive and
+						solve hundreds of calls and emails regarding different IT issues ranging from
+						printer issues to server and infrastructure outages. Clients included
+						Wagamama, Tapi Carpets, Hestia, and Jamie’s Italian.</br>
+						As a first line engineer, I used virtual machines to help maintain client
+						servers, visited a server building to fix damaged hardware, and installed
+						machines during site visits.</br>
+						I also spent some of my role helping the dev team add some new features to
+						some company applications with JavaScript.</p>
+				</div>
+			</div>
 		</div>
 
 		<!-- Footer -->
@@ -258,6 +295,8 @@
 				<li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
 			</ul>
 		</div>
+
+		<a href="#main" class="button" id="returnBtn" title="Go to top">Top</a>
 
 	</div>
 
