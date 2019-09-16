@@ -4641,7 +4641,7 @@ input, select, textarea {
     -webkit-transition: opacity 2s;
   }
   .carousel__item img {
-	width: 100%;
+	max-width: 76%;
 	height: 100%;
 	vertical-align: middle;
 	display: inline-block;
