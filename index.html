@@ -65,7 +65,10 @@
 					<li><a href="#skills" class="button large">Skills and attributes</a></li>
 				</ul>
 			</article>
+
+			<!-- Skills -->
 			<article id="skills">
+				<!-- Skills -->
 				<h2 class="major">Skills And attributes</h2>
 				<div class="table-wrapper">
 					<table style="width: 43%; float:left;">
@@ -136,6 +139,8 @@
 
 			<!-- Posts -->
 			<section id="posts" class="posts">
+
+				<!-- Work experience -->
 				<article>
 					<header>
 						<h2><a href="#">Work Experience</a></h2>
@@ -192,11 +197,44 @@
 						<li><button id="WorkXpButton">More info</button></li>
 					</ul>
 				</article>
+
+				<!-- Projects -->
 				<article>
 					<header>
 						<h2><a href="#">Projects</a></h2>
 					</header>
-					<a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
+					<div class="projects_div">
+						<!-- The grid: four columns -->
+						<div class="project_row">
+							<div class="project_column">
+								<img src="images/PingPongPreview0.png" alt="Pong" onclick="myProjectFunction(this);">
+							</div>
+							<div class="project_column">
+								<img src="images/ProjectYangtze.png" alt="Project Yangtze"
+									onclick="myProjectFunction(this);">
+							</div>
+							<div class="project_column">
+								<img src="images/PingPongPreview0.png" alt="Nature sim"
+									onclick="myProjectFunction(this);">
+							</div>
+						</div>
+
+						<!-- Image text -->
+						<div id="imgtext"></div>
+
+						<!-- The expanding image container -->
+						<div class="expanded_img_container">
+
+							<!-- Close the image -->
+							<span onclick="this.parentElement.style.display='none'"
+								class="project_closebtn">&times;</span>
+
+							<!-- Expanded image -->
+							<img id="expandedImg" style="width:100%">
+
+						</div>
+					</div>
+
 					<p></p>
 					<ul class="actions special">
 						<li><a href="https://github.com/ShaqNew?tab=repositories" class="button">GitHub Projects</a>
@@ -205,10 +243,10 @@
 				</article>
 			</section>
 			<!-- Work experience modal -->
-			<div id="myModal" class="modal">
+			<div id="WorkXpModal" class="WorkModal">
 
 				<!-- Modal content -->
-				<div class="modal-content">
+				<div class="WorkXpModal-content">
 					<span class="close">&times;</span>
 					<h2><img src="https://blackgirl.tech/images/black_logo.png" alt="" height="42" width="42">
 						BGT
