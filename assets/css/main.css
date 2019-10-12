@@ -2640,6 +2640,7 @@ input, select, textarea {
 			display: block;
 			margin: 4rem 0;
 			width: 100%;
+			padding-bottom: 56.25%;
 		}
 
 			.image.main:first-child {
@@ -2661,6 +2662,57 @@ input, select, textarea {
 			}
 
 		}
+
+
+		/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: dodgerblue;
+  transform: rotateY(180deg);
+}
+
+#cardtext {
+  position: absolute;
+  color: black;
+	font-size: 30px;
+	z-index: 3;
+}
+
+
+
 
 	a.image {
 		overflow: hidden;
@@ -4728,11 +4780,15 @@ input, select, textarea {
 }
 /* Modal Content/Box */
 .WorkXpModal-content {
+	position: relative;
+	top: 20px;
   background-color: #b1b1b1;
   margin: auto; /* 15% from the top and centered */
   padding: 20px;
   border: 1px solid #888;
 	width: 80%; /* Could be more or less, depending on screen size */
+	height: 90%;
+	overflow: auto; /* Enable scroll if needed */
 	z-index: 4;
 }
 /* The Close Button */
@@ -4748,6 +4804,8 @@ input, select, textarea {
   text-decoration: none;
   cursor: pointer;
 }
+
+
 
 
 /* The grid: Four equal columns that floats next to each other */
